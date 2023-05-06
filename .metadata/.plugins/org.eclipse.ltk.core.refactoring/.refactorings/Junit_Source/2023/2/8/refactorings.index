@@ -1,0 +1,26 @@
+1676864221759	Extract method 'writeBody'
+1676864273164	Extract method 'writerFooter'
+1676864305937	Extract method 'writeHeader'
+1676866983120	Copy package
+1676866992858	Delete element
+1676867408004	Move compilation unit
+1676867419954	Move compilation unit
+1676869162393	Delete element
+1676869549503	Delete element
+1676967097169	Rename compilation unit 'PawnTest.java'
+1676967575204	Rename type 'BoardTest'
+1677028245909	Rename type 'testCount'
+1677028403752	Delete element
+1677030486948	Rename type 'RepoortConstant'
+1677050377017	Delete element
+1677110991948	Delete element
+1677142062276	Extract method 'extracted'
+1677200215632	Extract method 'assertGpa'
+1677206767990	Move compilation unit
+1677206777624	Move compilation unit
+1677206905440	Move compilation unit
+1677217445282	Extract interface 'GradingStrategy'
+1677286813081	Extract superclass 'BasicGradesStrategy'
+1677286992193	Rename type 'BasicGradesStrategy'
+1677297680066	Delete element
+1677307370414	Move compilation unit

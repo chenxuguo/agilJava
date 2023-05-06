@@ -1,0 +1,11 @@
+package sis.studentinfo.Name;
+
+public class NameTest {
+
+	public void testExtraneousSpaces() {
+		final String fullName = "Jeffrey Hyman";
+		Name name = createName(fullName);
+		assertEquals("Jerrey", name.getFirstName());
+		assertEquals("Hyman", name.getLastName());
+	}
+}

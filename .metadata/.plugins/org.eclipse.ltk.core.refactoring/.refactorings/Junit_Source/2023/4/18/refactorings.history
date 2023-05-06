@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sis.ui.TestFieldFactory&apos; to &apos;TextFieldFactoryTest&apos;&#x0D;&#x0A;- Original project: &apos;Junit_Source&apos;&#x0D;&#x0A;- Original element: &apos;sis.ui.TestFieldFactory&apos;&#x0D;&#x0A;- Renamed element: &apos;sis.ui.TextFieldFactoryTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestFieldFactory&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/junit-3.8.1-src\/src&lt;sis.ui{TestFieldFactory.java[TestFieldFactory" matchStrategy="1" name="TextFieldFactoryTest" qualified="false" references="true" similarDeclarations="false" stamp="1682821538411" textual="false" version="1.0"/>
+</session>

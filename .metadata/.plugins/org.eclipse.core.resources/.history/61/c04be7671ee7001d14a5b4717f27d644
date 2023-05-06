@@ -1,0 +1,53 @@
+package sis.ui;
+
+import java.text.DateFormat;
+import java.util.Date;
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Field{
+
+	String fieldName;
+	int columns;
+	String lableText;
+	
+	public Field(String name){
+		fieldName = name;
+	}
+
+	public void setLabel(String labelText) {
+		// TODO Auto-generated method stub
+		this.labelText = labelText;
+	}
+
+	public void setLimit(int departmentFieldLimit) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setColumns(int defaultColumns) {
+		// TODO Auto-generated method stub
+		field.setColumns(defaultColumns);
+	}
+
+	public void setUpcaseOnly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setFormat(DateFormat defaultDateFormat) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setInitialValue(Date date) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return field.getName();
+	}
+}

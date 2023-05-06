@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="coursesModel"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="coursesModel"/>
+			<item value="coursesTableModel"/>
+			<item value="getText"/>
+			<item value="Button1"/>
+			<item value="assert"/>
+			<item value="assertContain"/>
+			<item value="assetContain"/>
+			<item value="new France"/>
+			<item value="new Dollar"/>
+			<item value="Dollar"/>
+			<item value="&quot;"/>
+			<item value="String"/>
+			<item value="Piece.WHITE"/>
+			<item value="Piece.BLACK"/>
+			<item value="str"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Money.france"/>
+			<item value="Money.dollar"/>
+			<item value="France"/>
+			<item value="&apos;"/>
+			<item value="Char"/>
+			<item value="Piece.Color.WHITE"/>
+			<item value="Piece.Color.BLACK"/>
+			<item value="builder"/>
+			<item value="number"/>
+			<item value="department"/>
+			<item value="null,"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="-271"/>
+		<item key="DIALOG_Y_ORIGIN" value="532"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="410"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+</section>

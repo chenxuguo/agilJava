@@ -1,0 +1,55 @@
+package sis.ui;
+
+import javax.swing.*;
+import javax.swing.text.*;
+
+
+public class TextFileFactory {
+	public static JTextField createField fieldSpec) {
+		JTextField field = null;
+		
+		if (fieldSpec.getFormat() != null)
+			field = createFormaattedTextField(fieldSpec);
+		else {
+			field = new JTextField();
+			if (fieldSpec.getInitialValue() != null)
+				field.setText(fieldSpec.getInitialValue().toString());
+		}
+		
+		if (fieldSpec.getLimit() > 0)
+			attachLimitFilter(field, fieldSpec.getLimit());
+		
+		if (fieldSpec.isUpcaseOnly())
+			attachUpcaseFilter(field);
+		
+		field.setColumns(field.getColumns());
+		field.setName(fieldSpec.getName());
+		return field;
+	}
+	
+	private static void attachLimitFilter(JtextField field, int limit) {
+		attachFilter(field, new LimitFilter(limit));
+	}
+	
+	private static void attachUpcaseFilter(JtextField field) {
+		attachfilter(field, new UpcaseFilter());
+	}
+	
+	private static void attchFilter(
+			JTextField field, ChainableFilter filter) {
+		AbstractDocument document = (AbstractDocument)field.getDocument();
+		Chainablefilter existingFilter =
+			(Chainablefilter)document.getDocumentFilter();
+		if (existingFilter == null)
+			document.setDocumentFilter(filter);
+		else
+			existingFilter.setNext(filter);
+	}
+	
+	private static Jtextfield createFormatterTextField(field fieldSpec) {
+		JFormattedTextField field =
+				new JFormatedTExtField(fieldSpec.getFormat());
+		field.setValue(fieldSpec.getInitialValue());
+		return field;
+	}
+}

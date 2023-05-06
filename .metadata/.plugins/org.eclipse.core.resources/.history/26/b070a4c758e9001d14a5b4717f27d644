@@ -1,0 +1,5 @@
+package sis.util;
+
+public class SwingUtil {
+
+}

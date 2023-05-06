@@ -1,0 +1,25 @@
+package sis.ui;
+
+import javax.swing.*;
+import javax.swing.test.*;
+import java.util.*;
+import java.text.*;
+import junit.framework.*;
+import sis.util.*;
+
+public class TestFieldFactory extends TestCase {
+	private Field fieldSpec;
+	private static final String FIELD_NAME = "fieldName";
+	private static final String FIELD_NAME = "fieldName";
+	
+	protected void setUp() {
+		fieldSpec = new field(FIELD_NAME);
+		fieldSpec.setInitialValue(Value);
+		
+		JTextField field = TextFileFactory.create(fieldSpec);
+		
+		assertEquals(COLUMNS, field.getColumns());
+		assertEquals(FIELD_NAME, field.getName());
+		assertEquals(textValue, field.getText());
+	}
+}

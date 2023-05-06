@@ -1,0 +1,56 @@
+package sis.ui;
+
+import javax.swing.*;
+import javax.swing.test.*;
+import javax.swing.text.AbstractDocument;
+
+import java.util.*;
+import java.text.*;
+import junit.framework.*;
+import sis.util.*;
+
+public class TestFieldFactory extends TestCase {
+	private Field fieldSpec;
+	private static final String FIELD_NAME = "fieldName";
+	private static final String FIELD_NAME = "fieldName";
+	
+	protected void setUp() {
+		fieldSpec = new field(FIELD_NAME);
+		fieldSpec.setInitialValue(Value);
+		
+		JTextField field = TextFileFactory.create(fieldSpec);
+		
+		assertEquals(COLUMNS, field.getColumns());
+		assertEquals(FIELD_NAME, field.getName());
+		assertEquals(textValue, field.getText());
+	}
+	
+	public void textLimit() {
+		final int limit = 3;
+		fieldSpec.setLimit(limit);
+		
+		JTextField field = TextFieldFactory.create(fieldSpec);
+		AbstractDocument document = (AbstractDocument)field.getDocument();
+		ChainableFilter  filter = (ChainableFilter)document.getDocumentFilter();
+		assertEquals(UpcaseFilters.class, filter.getClass());
+		
+	}
+	
+	public void testMutipleFilters() {
+		fieldSpec.setLimit(3);
+		fieldSpec.setUpcaseOnly();
+		
+		JTextField field = TextFieldFactory.create(fieldSpec);
+		
+		AbstractDocument document = (AbstractDocument)field.getDocument();
+		ChainableFilter filter =
+				(ChainableFilter)document.getDocumentFilter();
+		
+		Set<Class> filters = new HashSet<Class>();
+		filters.add(filter.getClass());
+		filters.add(filter.getNext().getClass());
+		
+		assertTrue(filters.contains(LimitFilter.class));
+		assertTrue(filters.contains(UpcaseFilter.class));
+	}
+}

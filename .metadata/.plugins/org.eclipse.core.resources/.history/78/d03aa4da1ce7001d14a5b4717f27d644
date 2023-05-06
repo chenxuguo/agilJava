@@ -1,0 +1,48 @@
+package sis.ui;
+
+import java.text.DateFormat;
+import java.util.Date;
+
+public class Field{
+	JTextField field;
+	private CoursesPanel panel = new CoursesPanel();
+	
+	public Field(String name){
+		field = panel.getField(name);
+	}
+
+	public void setLabel(String labelText) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setLimit(int departmentFieldLimit) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setColumns(int defaultColumns) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setUpcaseOnly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setFormat(DateFormat defaultDateFormat) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setInitialValue(Date date) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

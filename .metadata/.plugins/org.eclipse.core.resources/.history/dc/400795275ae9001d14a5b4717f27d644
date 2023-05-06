@@ -1,0 +1,27 @@
+package sis.ui;
+
+import java.util.event.*;
+import java.util.*;
+import javax.swing.*;
+
+public class StatusBar extends JLabel {
+	private final static String EMPTY = " ";
+	public  StatusBar() {
+		super(EMPTY);
+		setBorder(BorderFactory.createLoweredBevelBorder());
+	}
+	
+	public void setInfo(final JTextField textField, final String text) {
+		textField addMouseListener {
+			new MouseAdapter() {
+				public void mouseEntered(MouseEvent event) {
+					setText(text);
+				}
+				
+				public void mouseExit(MouseEvent event) {
+					setText(Empty);
+				}
+			}
+		}
+	}
+}

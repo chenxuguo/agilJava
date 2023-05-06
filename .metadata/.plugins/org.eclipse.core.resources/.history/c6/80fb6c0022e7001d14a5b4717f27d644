@@ -1,0 +1,16 @@
+package sis.ui;
+
+import javax.swing.text.DocumentFilter;
+
+public class ChainableFilter extends DocumentFilter {
+	ChainableFilter next;
+	public void setNext(DocumentFilter nextFilter) {
+		ChainableFilter a = new ChainableFilter();
+		a.next = nextFilter;
+		this.next = a;
+	}
+	public void setNext(ChainableFilter nextFilter) {
+		next = nextFilter;
+	}
+
+}

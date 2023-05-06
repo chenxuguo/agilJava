@@ -1,0 +1,8 @@
+package sis.ui;
+
+import junit.framework.*;
+import static sis.ui.FieldCatalog.*;
+
+public class FieldCatalogTest {
+
+}

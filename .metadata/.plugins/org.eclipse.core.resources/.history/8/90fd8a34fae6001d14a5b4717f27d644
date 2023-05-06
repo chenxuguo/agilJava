@@ -1,0 +1,12 @@
+package sis.ui;
+
+import javax.swing.*;
+import javax.swing.test.*;
+import java.util.*;
+import java.text.*;
+import junit.framework.*;
+import sis.util.*;
+
+public class TestFieldFactory {
+
+}

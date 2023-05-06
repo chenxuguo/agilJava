@@ -1,0 +1,53 @@
+package sis.ui;
+
+import java.text.DateFormat;
+import java.util.Date;
+
+public class Field{
+
+	String fieldName;
+	int columns;
+	String labelText;
+	Date initialValue;
+	int limit;
+	boolean upcaseOnly = false;
+	
+	public Field(String name){
+		fieldName = name;
+	}
+
+	public void setLabel(String labelText) {
+		// TODO Auto-generated method stub
+		this.labelText = labelText;
+	}
+
+	public void setLimit(int fieldLimit) {
+		// TODO Auto-generated method stub
+		this.limit = fieldLimit;
+	}
+
+	public void setColumns(int columns) {
+		// TODO Auto-generated method stub
+		this.columns = columns;
+	}
+
+	public void setUpcaseOnly() {
+		// TODO Auto-generated method stub
+		upcaseOnly = true;
+	}
+
+	public void setFormat(DateFormat defaultDateFormat) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setInitialValue(Date date) {
+		// TODO Auto-generated method stub
+		this.initialValue = date; 
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return fieldName;
+	}
+}

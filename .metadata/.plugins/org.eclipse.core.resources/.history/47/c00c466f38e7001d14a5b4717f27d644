@@ -1,0 +1,27 @@
+package sis.ui;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.text.AttributeSet;
+import javax.swing.text.DocumentFilter;
+
+public class ChainableFilter extends DocumentFilter {
+	private List<DocumentFilter> filters;
+	private AttributeSet attr;
+	
+	public ChainableFilter() {
+		filters = new ArrayList<DocumentFilter>(25);
+	}
+	
+	//	ChainableFilter next;
+//	public void setNext(DocumentFilter nextFilter) {
+//		ChainableFilter a = new ChainableFilter();
+//		a.next = nextFilter;
+//		this.next = a;
+//	}
+//	public void setNext(ChainableFilter nextFilter) {
+//		next = nextFilter;
+//	}
+//
+}
